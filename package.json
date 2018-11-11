@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davisnguyen111195/linkmanager.git"
-  },
+  "repository": "git+https://github.com/davisnguyen111195/linkmanager.git",
   "keywords": [
     "linkmanager"
   ],
@@ -18,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/davisnguyen111195/linkmanager/issues"
   },
-  "homepage": "https://github.com/davisnguyen111195/linkmanager#readme"
+  "homepage": "https://github.com/davisnguyen111195/linkmanager#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
