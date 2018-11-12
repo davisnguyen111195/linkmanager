@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/davisnguyen111195/linkmanager#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6"
   }
 }

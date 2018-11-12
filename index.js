@@ -1,13 +1,19 @@
-let express = require('express');
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const config = require('config');
 
-let app = express();
+const controller = require(__dirname + "/apps/controllers");
+//body parser
+app.use(bodyParser.json());
 
-const port = process.env.port || 3000
+app.set('views',__dirname + "/apps/views");
+app.set("view engine", "ejs");
 
-app.get('/', (req, res) => {
-    return res.send("DAT");
-})
+app.use(controller);
 
-app.listen(port, () => {
+const host = config.get('server.host');
+const port = config.get('server.port');
+app.listen(port, host, () => {
     console.log('App listening on port ' + port);
 })
