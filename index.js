@@ -7,6 +7,10 @@ const controller = require(__dirname + "/apps/controllers");
 //body parser
 app.use(bodyParser.json());
 
+//static folder
+app.use('/static', express.static(__dirname + "/public"));
+
+
 app.set('views',__dirname + "/apps/views");
 app.set("view engine", "ejs");
 
