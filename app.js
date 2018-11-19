@@ -6,7 +6,9 @@ const config = require('config');
 const controller = require(__dirname + "/apps/controllers");
 //body parser
 app.use(bodyParser.json());
-
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 //static folder
 app.use('/static', express.static(__dirname + "/public"));
 

@@ -4,10 +4,11 @@
         "port": 3000
     },
     "mysql": {
-        "host": "3306",
+        "host": "localhost",
         "database": "blog_codeto",
         "user": "blog",
-        "password": "lonbs123"
+        "password": "lonbs123",
+        "port": 3306
     }
 } 
 
